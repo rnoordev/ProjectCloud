@@ -176,3 +176,69 @@ body {
     background-color: #f8d7da;
     color: #721c24;
 }
+
+/* تنسيقات صفحة البحث */
+#searchResults {
+    min-height: 300px;
+}
+
+.search-result-item {
+    border-bottom: 1px solid #eee;
+    padding: 1.5rem 0;
+    transition: all 0.3s;
+}
+
+.search-result-item:hover {
+    background-color: #f8f9fa;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.result-title {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.result-meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.result-meta span {
+    margin-left: 1rem;
+}
+
+.result-excerpt {
+    color: #495057;
+    line-height: 1.7;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 0.1rem 0.25rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+
+.file-type-badge {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+/* التكيف مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    #searchForm .row>div {
+        margin-bottom: 1rem;
+    }
+
+    .search-result-item {
+        padding: 1rem 0;
+    }
+}
